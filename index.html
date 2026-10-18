@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111319" />
+    <meta name="description" content="数字之外的你：关于大学生量化生活的互动融媒体作品。" />
+    <title>数字之外的你｜请不要用数字介绍自己</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-thread" aria-hidden="true"><span id="scrollThread"></span></div>
+    <header class="floating-nav">
+      <a href="#cover" class="nav-name">数字之外</a>
+      <a href="#system" class="nav-progress"><span id="navCount">0</span> / 5</a>
+    </header>
+
+    <main>
+      <section class="cover" id="cover" aria-labelledby="coverTitle">
+        <div class="cover-photo" aria-hidden="true"></div>
+        <div class="film-grain" aria-hidden="true"></div>
+        <p class="cover-kicker">一份关于大学生量化生活的互动记录</p>
+        <h1 id="coverTitle" class="hand-title" data-scatter>请不要用数字<br />介绍自己</h1>
+        <p class="cover-question">当绩点、排名、实习和点赞排成一行，它们能讲完一个人的故事吗？</p>
+        <a class="enter-bubble" href="#system"><span>戳一下<br />进入</span></a>
+        <p class="photo-mark">中国政法大学昌平校区 · 摄影 N509FZ</p>
+      </section>
+
+      <section class="prologue" aria-label="作品引言">
+        <p class="pencil-note note-a">“请用一分钟介绍一下自己。”</p>
+        <div class="prologue-lines">
+          <p>于是我们熟练地报出学校、绩点、排名、实习。</p>
+          <p>平台继续替我们补上粉丝、点赞和浏览量。</p>
+          <p class="hand-emphasis">一个人，被压缩成几项方便比较的数字。</p>
+        </div>
+        <div class="doodle-arrow" aria-hidden="true">↘</div>
+      </section>
+
+      <section class="system-world" id="system" aria-labelledby="systemTitle">
+        <div class="system-night" aria-hidden="true"></div>
+        <div class="system-copy">
+          <p class="scene-index">01 / SYSTEM VIEW</p>
+          <h2 id="systemTitle" class="hand-heading">系统眼中的你</h2>
+          <p>点击泡泡，填入一个指标。确认后，它会破裂并进入档案。</p>
+        </div>
+        <div class="bubble-field" id="bubbleField" aria-label="需要填写的五项量化指标">
+          <button class="metric-bubble bubble-gpa" data-metric="gpa" type="button"><span class="bubble-shine"></span><b>绩点</b><small>GPA</small></button>
+          <button class="metric-bubble bubble-rank" data-metric="rank" type="button"><span class="bubble-shine"></span><b>排名</b><small>RANK</small></button>
+          <button class="metric-bubble bubble-intern" data-metric="intern" type="button"><span class="bubble-shine"></span><b>实习</b><small>INTERNSHIP</small></button>
+          <button class="metric-bubble bubble-award" data-metric="award" type="button"><span class="bubble-shine"></span><b>获奖</b><small>AWARDS</small></button>
+          <button class="metric-bubble bubble-social" data-metric="social" type="button"><span class="bubble-shine"></span><b>粉丝<br />点赞</b><small>SOCIAL</small></button>
+        </div>
+        <ol class="number-trail" id="numberTrail" aria-live="polite">
+          <li data-slot="gpa"><span>绩点</span><b>等待输入</b></li>
+          <li data-slot="rank"><span>排名</span><b>等待输入</b></li>
+          <li data-slot="intern"><span>实习</span><b>等待输入</b></li>
+          <li data-slot="award"><span>获奖</span><b>等待输入</b></li>
+          <li data-slot="social"><span>社交数据</span><b>等待输入</b></li>
+        </ol>
+        <button class="continue-hand" id="continueHand" type="button" disabled><span>交付完成，继续向前</span><i>→</i></button>
+        <p class="privacy-note">所有填写只在当前浏览器中处理，不会上传。</p>
+      </section>
+
+      <section class="system-result" id="systemResult" aria-labelledby="resultTitle">
+        <div class="scan-lines" aria-hidden="true"></div>
+        <p class="scene-index">SYSTEM OUTPUT / 001</p>
+        <h2 id="resultTitle">系统成功读取了你。</h2>
+        <div class="typed-profile" id="typedProfile"></div>
+        <p class="result-question">可是，这就是你吗？</p>
+        <a href="#threshold" class="pencil-link">向数字之外走一步 <span>↘</span></a>
+      </section>
+
+      <section class="threshold" id="threshold" aria-labelledby="thresholdTitle">
+        <div class="threshold-photo" aria-hidden="true"></div>
+        <div class="threshold-curtain curtain-left" aria-hidden="true"></div>
+        <div class="threshold-curtain curtain-right" aria-hidden="true"></div>
+        <div class="threshold-copy">
+          <p>02 / OUTSIDE THE NUMBERS</p>
+          <h2 id="thresholdTitle" class="hand-title small">数字之外的你</h2>
+          <strong>世界在你面前展开</strong>
+          <a href="#humanWorld" class="open-world">推开这扇门</a>
+        </div>
+      </section>
+
+      <form class="human-world" id="humanWorld" aria-labelledby="humanTitle">
+        <h2 id="humanTitle" class="visually-hidden">数字之外的自我档案</h2>
+        <section class="world-scene weather-scene" aria-labelledby="weatherTitle">
+          <div class="scene-photo snow-photo" aria-hidden="true"></div>
+          <div class="question-float weather-question">
+            <p>01</p>
+            <h3 id="weatherTitle" class="hand-heading">你喜欢什么天气？</h3>
+            <div class="answer-bubbles" id="weatherBubbles">
+              <label><input type="radio" name="weather" value="晴天" /><span>晴天</span></label>
+              <label><input type="radio" name="weather" value="阴天" /><span>阴天</span></label>
+              <label><input type="radio" name="weather" value="雨天" /><span>雨天</span></label>
+              <label><input type="radio" name="weather" value="雪天" /><span>雪天</span></label>
+              <label><input type="radio" name="weather" value="有风的天" /><span>有风</span></label>
+            </div>
+          </div>
+          <p class="margin-note">天气没有排名，<br />却会改变一天的心情。</p>
+        </section>
+
+        <section class="world-scene song-scene" aria-labelledby="songTitle">
+          <div class="scene-photo library-photo" aria-hidden="true"></div>
+          <div class="question-float song-question">
+            <p>02</p>
+            <h3 id="songTitle" class="hand-heading">最近在循环哪首歌？</h3>
+            <label class="writing-line"><span class="visually-hidden">歌名和歌手</span><input id="song" type="text" maxlength="40" placeholder="把歌名写在这里……" autocomplete="off" /></label>
+          </div>
+          <div class="sound-rings" aria-hidden="true"><i></i><i></i><i></i></div>
+        </section>
+
+        <section class="world-scene keep-scene" aria-labelledby="keepTitle">
+          <div class="scene-photo notebook-photo" aria-hidden="true"></div>
+          <div class="question-float keep-question">
+            <p>03</p>
+            <h3 id="keepTitle" class="hand-heading">什么事情写不进简历，<br />你仍然愿意坚持？</h3>
+            <label class="writing-line long-line"><span class="visually-hidden">愿意坚持的事情</span><textarea id="keepDoing" maxlength="120" rows="3" placeholder="写下一件没有即时回报的事……"></textarea></label>
+          </div>
+        </section>
+
+        <section class="world-scene friend-scene" aria-labelledby="friendTitle">
+          <div class="scene-photo classroom-photo" aria-hidden="true"></div>
+          <div class="question-float friend-question">
+            <p>04</p>
+            <h3 id="friendTitle" class="hand-heading">朋友会怎样介绍你？</h3>
+            <label class="writing-line long-line"><span class="visually-hidden">朋友眼中的我</span><textarea id="friendIntro" maxlength="100" rows="3" placeholder="一句只有熟悉你的人才会说的话……"></textarea></label>
+          </div>
+          <p class="whisper-note">“这个答案，没有任何系统比朋友更清楚。”</p>
+        </section>
+
+        <section class="world-scene free-scene" aria-labelledby="freeTitle">
+          <div class="scene-photo city-photo" aria-hidden="true"></div>
+          <div class="question-float free-question">
+            <p>05</p>
+            <h3 id="freeTitle" class="hand-heading">如果今天无需证明自己，<br />你想怎样度过？</h3>
+            <label class="writing-line long-line"><span class="visually-hidden">无需证明的一天</span><textarea id="freeDay" maxlength="120" rows="3" placeholder="写下你真正想过的一天……"></textarea></label>
+            <button class="finish-world" type="submit">让世界继续展开 <span>↗</span></button>
+          </div>
+        </section>
+      </form>
+
+      <section class="final-world" id="finalWorld" aria-labelledby="finalTitle" hidden>
+        <div class="sky-wash" aria-hidden="true"></div>
+        <div class="final-bubbles" aria-hidden="true"></div>
+        <p class="scene-index">CALCULATION ENDED</p>
+        <h2 id="finalTitle" class="hand-title small">系统无法计算<br />你的价值</h2>
+        <p class="final-intro" id="finalIntro"></p>
+        <div class="self-lines">
+          <p><span>我愿意坚持</span><b id="finalKeep"></b></p>
+          <p><span>朋友眼中的我</span><b id="finalFriend"></b></p>
+          <p><span>无需证明的一天</span><b id="finalDay"></b></p>
+        </div>
+        <div class="final-actions">
+          <button type="button" id="savePortrait">保存两份自我档案</button>
+          <button type="button" id="copyPortrait">复制文字自画像</button>
+          <button type="button" id="restart">重新走一遍</button>
+        </div>
+        <p class="action-message" id="actionMessage" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="film-room" id="film" aria-labelledby="filmTitle">
+        <p class="scene-index">VIDEO / CAMPUS VOICES</p>
+        <h2 id="filmTitle" class="hand-heading">被数字量化的大学生活</h2>
+        <p class="film-lead">校园采访纪录片 · 主视频</p>
+        <div class="taped-film">
+          <div class="tape tape-one" aria-hidden="true"></div><div class="tape tape-two" aria-hidden="true"></div>
+          <div class="film-placeholder" id="filmPlaceholder"><span>▶</span><p>成片接入后将在这里播放</p><label>选择本地视频<input id="videoPicker" type="file" accept="video/*" /></label></div>
+          <video id="localVideo" controls playsinline hidden></video>
+        </div>
+        <p class="film-note">本地选择只用于当前设备预览。提交版接入正式成片后，这里会成为整套融媒体作品的观看入口。</p>
+      </section>
+
+      <section class="closing" aria-label="作品结语">
+        <p>绩点会波动，流量会消失，排名会改变。</p>
+        <h2 class="hand-heading">完整的人，始终大于一组指标。</h2>
+        <p class="closing-tag"># 不是所有人生价值，都可以被量化</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>《数字之外的你》· 新媒体实务融媒体作品</p>
+      <details><summary>图片来源与许可</summary><p>中国政法大学昌平校区北门：N509FZ，CC BY-SA 4.0，来源 <a href="https://commons.wikimedia.org/wiki/File:North_gate_of_CUPL_Changping_Campus_(20231127145826).jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>。中国政法大学校园：Shimmerko，CC BY-SA 4.0，来源 <a href="https://commons.wikimedia.org/wiki/File:China_University_of_Political_Science_and_Law.jpg" target="_blank" rel="noreferrer">Wikimedia Commons</a>。其余氛围图由创作组提供，正式公开发布前请核对授权或替换为小组自摄素材。</p></details>
+    </footer>
+
+    <dialog class="metric-dialog" id="metricDialog">
+      <form method="dialog" id="metricForm">
+        <button class="dialog-close" value="cancel" aria-label="关闭" type="button">×</button>
+        <p class="dialog-number" id="dialogNumber">01</p>
+        <h2 id="dialogTitle" class="hand-heading">绩点</h2>
+        <p id="dialogHint">填写你愿意留下的数字。</p>
+        <div id="dialogFields"></div>
+        <button class="pop-confirm" type="submit">确认，然后戳破它 <span>○</span></button>
+      </form>
+    </dialog>
+    <canvas id="portraitCanvas" width="1200" height="1600" hidden></canvas>
+    <script src="app.js"></script>
+  </body>
+</html>
